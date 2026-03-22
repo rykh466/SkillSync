@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillSync</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+  <h2><a href="#">SkillSync</a></h2>
+
+  <div class="menu-toggle" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <nav class="nav-links">
+    <a href="#about">About</a>
+    <a href="#problem">Problem</a>
+    <a href="#solution">Solution</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+
+    <div class="hero-text">
+      <h1 class="gradient-text">SkillSync</h1>
+      <h2>Learn Smarter, Not Harder</h2>
+      <p>
+        SkillSync helps you cut through the noise and follow a personalized
+        learning path tailored to your goals.
+      </p>
+      <button onclick="cta()">Get Started</button>
+    </div>
+
+    <div class="hero-image">
+      <img src="OnlineLearningIllustration.svg" alt="Learning Illustration">
+    </div>
+
+  </div>
+</section>
+
+<section id="about" class="fade">
+  <div class="about-container">
+
+    <h2>About <span class="highlight">SkillSync</span></h2>
+
+    <p class="about-desc">
+      SkillSync is a <span class="highlight">smart learning platform</span> designed to simplify the way people learn online. 
+      With so much scattered content available, learners often feel lost and overwhelmed. 
+      SkillSync solves this by creating personalized learning paths tailored to each user's goals, 
+      helping them stay focused, organized, and efficient.
+    </p>
+
+    <div class="about-grid">
+
+      <div class="about-card">
+        <h3>🌍 Our Vision</h3>
+        <p>
+          To become the leading platform for modern learning, empowering individuals worldwide 
+          to acquire skills in a structured, efficient, and accessible way.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3>🚀 Our Mission</h3>
+        <p>
+          To simplify learning by providing personalized guidance, high-quality resources, 
+          and clear pathways that help users achieve their goals faster.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="problem" class="fade">
+  <div class="problem-wrapper">
+
+    <div class="problem-content">
+
+
+      <div class="problem-left">
+        <h2>The <span class="problem-highlight">Problem</span></h2>
+
+        <div class="problem-step active">
+          <span>01</span>
+          <div>
+            <h3>Too Many Resources</h3>
+            <p>Students face overwhelming content without knowing what to follow.</p>
+          </div>
+        </div>
+
+        <div class="problem-step">
+          <span>02</span>
+          <div>
+            <h3>No Clear Roadmap</h3>
+            <p>Learners struggle to decide what to learn next.</p>
+          </div>
+        </div>
+
+        <div class="problem-step">
+          <span>03</span>
+          <div>
+            <h3>Lack of Consistency</h3>
+            <p>Without structure, user loses motivation and stops learning.</p>
+          </div>
+        </div>
+
+        <div class="problem-step">
+          <span>04</span>
+          <div>
+            <h3>Low Quality Content</h3>
+            <p>Time is wasted on resources that don’t actually help.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="problem-right">
+        <img src="StressedIllustration.svg" alt="Problem Image">
+      </div>
+
+    </div>
+
+    <div class="problem-cta">
+      <a href="#solution" class="solution-btn">Our Solution →</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="solution" class="fade">
+  <div class="container">
+    <h2>Our Solution</h2>
+    <h4 class="solution-tag">Our Approach</h4>
+    <p class="solution-desc">
+      SkillSync simplifies your learning journey by creating 
+      <span class="highlight">personalized roadmaps</span> tailored to your goals. 
+      Instead of wasting time searching for the right resources, you get a 
+      <span class="highlight">clear, structured path</span> that keeps you focused 
+      and consistent.
+    </p>
+
+    <p class="solution-sub">
+      From curated content to progress tracking, everything is designed 
+      to help you learn faster and more effectively.
+    </p>
+
+    <div class="features">
+      <div class="feature-box" onclick="toggleCard(this)">
+        <h4>AI Recommendations</h4>
+        <p>Smart suggestions for what to learn next</p>
+        <div class="more-content">
+          <p>We analyze your learning history to create structured roadmaps.</p>
+        </div>
+      </div>
+
+      <div class="feature-box" onclick="toggleCard(this)">
+        <h4>Progress Tracking</h4>
+        <p>Track your learning journey</p>
+        <div class="more-content">
+          <p>Monitor progress with detailed insights and milestones.</p>
+        </div>
+      </div>
+
+      <div class="feature-box" onclick="toggleCard(this)">
+        <h4>Curated Content</h4>
+        <p>Only the best resources</p>
+        <div class="more-content">
+          <p>We recommend high-quality learning material tailored to you.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="fade">
+  <div class="container">
+    <h2>Contact Us</h2>
+
+    <form id="contactForm">
+
+      <input type="text" id="name" placeholder="Your Name">
+      <small class="error" id="nameError"></small>
+
+      <input type="email" id="email" placeholder="Your Email">
+      <small class="error" id="emailError"></small>
+
+      <textarea id="message" placeholder="Your Message"></textarea>
+      <small class="error" id="messageError"></small>
+
+      <button type="submit">Send Message</button>
+
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 SkillSync | All Rights Reserved</p>
+
+  <div class="social-icons">
+    <a href="https://www.instagram.com/rayyan_k0810?igsh=MTNjNnlpOGQ3NGhzdw=="><i class="fab fa-instagram"></i></a>
+    <a href="https://x.com/rykh466"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/rayyan-khan-337058378"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/rykh466"><i class="fab fa-github"></i></a>
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
