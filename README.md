@@ -53,7 +53,7 @@ To Run Locally
 
 1. Download or clone the repository:
 
-git clone https://github.com/your-username/skillsync.git
+git clone https://github.com/rykh466/skillsync.git
 
 2. Open the project folder:
 
